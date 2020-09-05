@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>绘制圆形和弧形</title>
+</head>
+<body>
+	
+	<div style="font-size: 4em;text-align: center;position: fixed;left: 500px;">不你没有疑问！</div>
+	
+<canvas id="cavsElem" width="1200px" height="900px" style="display: block;">
+    你的浏览器不支持canvas，请升级浏览器
+</canvas>
+<script>
+    /* 绘制圆形*/
+    //获得画布并上下文对象
+    var context = document.getElementById('cavsElem').getContext('2d');
+    context.beginPath();//开始路径
+    context.arc(700,400,300,0,2*Math.PI,true);//绘制圆形，true为逆时针
+    context.closePath();//关闭路径
+    context.fillStyle = '#90d9ff';//设置填充颜色
+
+
+    //添加渐变线
+    var grd = context.createLinearGradient(400,100,1100,700);
+
+    //添加颜色断点
+    grd.addColorStop(0,"#90d9ff");
+    grd.addColorStop(0.7,"#FF81E4");
+//    grd.addColorStop(1,"black");
+
+    //应用渐变
+    context.fillStyle = grd;
+
+    context.fill();//填充
+    /* 绘制弧形*/
+    context.beginPath();//开始路径
+    context.strokeStyle = "#fff";//设置描边颜色
+    context.lineWidth = 5;//设置线的粗细
+    context.arc(700,550,75,Math.PI/6,5*Math.PI/6,false);//绘制弧形，false为顺时针
+    context.stroke();//描边
+
+    context.beginPath();
+    context.strokeStyle = "#fff";//设置描边颜色
+    context.lineWidth = 5;//设置线的粗细
+    context.arc(560,300,65,Math.PI/180,6*Math.PI/6,true);
+    context.stroke();//描边
+    //context.fillStyle = '#fff';
+    //context.closePath();
+    //context.fill();
+
+    context.beginPath();
+    context.strokeStyle = "#fff";//设置描边颜色
+    context.lineWidth = 5;//设置线的粗细
+    context.arc(840,300,65,Math.PI/180,6*Math.PI/6,true);
+    context.stroke();//描边
+//    context.arc(140,60,15,0,2*Math.PI,true);
+//    context.fillStyle = '#fff';
+//    context.closePath();
+//    context.fill();
+</script>
+	
+</body>
+</html>

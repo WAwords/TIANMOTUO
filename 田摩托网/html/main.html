@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>田摩托专卖网</title>
+<link href="../css/main.css" rel="stylesheet" type="text/css">
+<link href="../css/font_1105320_0s4zj0izl5ud/iconfont.css" rel="stylesheet" type="text/css">
+	
+
+	
+</head>
+
+<body>
+    
+    <script>
+        var outside=true	
+        function open() {		
+            outside=false		
+            login.style.display = "block";	
+        }	
+        document.body.addEventListener('click', function() {		
+            outside=true	},true)	
+        document.body.addEventListener('click', function() {		
+            if(outside){			
+                login.style.display = 'none'		
+            }	})
+    
+    </script>
+    
+<!--     tabindex="0" onf onblur="divonblur()"-->
+	
+	<div id="login" style="display: none;" onclick="outside=false">
+		<div id="login_box">
+			<i class="iconfont iconic_motorcycle_px" style="font-size: 10em;line-height: 220px;" id="login_word"></i>
+		</div>
+		<form action="welcome.html" id="login_box2">
+			<input type="text" placeholder="用户名" class="sub_word">
+			<input type="password" placeholder="密码" class="sub_word">
+			<input type="submit" value="登录" id="sub_but">
+			<div id="login_hint">没有账号？ <a href="注册界面.html" id="login_hint_a">点击注册</a></div>
+			<a href="javascript:divonblur()" id="close">退出登录</a>
+		</form>
+	</div>
+	
+	
+		
+	<header style="z-index: 100;">
+				<a id="heada" href="#" title="我们不生产摩托，我们只是摩托的搬运工。--田摩托">
+						<i class="iconfont iconmotuoche" style="font-size: 5em;"></i>
+						<i class="iconfont iconic_motorcycle_px" style="font-size: 4em;"></i>
+						<i class="iconfont iconmotuo" style="font-size: 3em;"></i>
+						<i style="font-size: 3em;">TMotorcycle</i>
+					</a>
+				<form class="ss" method="get" autocomplete="off">
+						<input type="text" placeholder="各种摩托" id="input_1" title="请输入！">
+						<input type="submit" value="?" id="input_2">
+					</form>
+				<div id="headerr">
+						<a class="iconfont icongouwuche1" style="font-size: 2em;" title="购物车" href=""></a>
+						<a class="iconfont iconrentouxiang" style="font-size: 2em;" title="登录" href="javascript:open();"></a>
+					</div>
+		</header>
+	<section>
+		<div class="msg">
+				<a id="vido1_box" href="#" title="电动车窃手一度引起民众的恐慌！">
+					<video id="vido1_shadow" src="../img&vid/窃贼之王窃格瓦拉采访视频.mp4" style="width: 500px;" autoplay loop controls muted>你这浏览器好像不支持。</video>
+					<div id="vido1_explain" style="font-size: 2em;white-space: pre-wrap;">特别警告：据有关人士爆料，窃格瓦拉近日成立窃帮，疑向摩托出手
+					</div>
+				</a>
+				<div id="sur_box">
+					<a id="img1_box" href="../../web作业/Untitled-2.html">
+						  <img src="../img&vid/bf709320dcc85e79ff52bf34a860434b_wps图片.jpg" id="img1" style="width: 250px;" alt="">
+						  <div id="img1_explain" style="font-size: 1.5em;white-space: pre-wrap;"><b>店长推荐：</b>MT001<br>Nice!--田摩托</div>
+				  	</a>
+					<a id="T_box" style="font-size: 2em;white-space: pre-wrap;" href="">神一般的男人<br>田摩托</a>
+				</div>
+				<div id="sur_box2">
+					<a id="img2_box" href="">
+						<img src="../img&vid/17930b0cbd43f1847820eb65d2e33ba5_wps图片_WPS图片.jpg" alt="" id="img2">
+						<div id="intr_1" style="font-size: 1.5em;">HG001艳红版</div>
+					</a>
+					<a id="img3_box" href="">
+						<img src="../img&vid/e4ae7c0104e033f9a500b032fce1c0a8_wps图片.jpg" alt="" id="img3">
+						<div id="intr_2" style="font-size: 1.5em;">HG002黑白款</div>
+					</a>
+					<a id="img4_box" href="">
+						<img src="../img&vid/0b881aa7a816195427c68d9f7036859e (1)_wps图片.jpg" alt="" id="img4">
+						<div id="intr_3" style="font-size: 2em;">极速体验——MT系列</div>
+					</a>
+				</div>
+		</div>
+		<div class="msg">
+				<div id="msg2_leftbox">
+					<a class="leftbox" href="">
+						<div class="left_img12">
+							<img src="../img&vid/51571a5d83dd5cd86bd370354e2cf120_WPS图片.jpg" alt="" style="height: 175px;transition: 0.5s;" id="left_img1">
+							<div class="hover_box hover_font">田摩托推荐的TM系列之一</div>
+						</div>
+						<div style="font-size: 2em;white-space: pre-wrap;" class="left_boxfont">MT002<br>红色版</div>
+					</a>
+					<a class="leftbox" id="leftbox2" href="">
+						<div class="left_img12" style="width: 293.767px;overflow: hidden;">
+							<img src="../img&vid/d797a0cf4a07b46af49b953540227009_WPS图片.jpg" alt="" style="height: 175px;transition: 0.5s;" id="left_img2">
+							<div class="hover_box hover_font">田摩托推荐的TM新款</div>
+						</div>
+						<div style="font-size: 2em;white-space: pre-wrap;" class="left_boxfont">MT003<br>黑色版</div>
+					</a>
+				</div>
+				<a id="msg2_midbox" href="">
+					<div id="msg2_midbox_1">
+						<img src="../img&vid/39d4020c8d85694ed213262e9b191e94_WPS图片.jpg" alt="" style="height: 175px;position: absolute;left: -30px;">
+					</div>
+					<div id="mid_txt">MT004--山的那边海的那边有辆蓝摩托</div>
+				</a>
+				<div id="msg2_rightbox">
+					<a class="R" id="R_A" href="">
+						<img src="../img&vid/1702e5c7a24abd7a42fa9b9089c7c5e9_WPS图片.jpg" alt="" style="width: 195px;position: absolute;top: -40px;left: 0;transition: 0.5s;" id="R_img1">
+						<div id="R_1">帅气！<br>---田摩托</div>
+					</a>
+					<a class="R" style="position: absolute;right: 0;" href="">
+						<img src="../img&vid/23862b6a96093a59e6fce25442548d9f_WPS图片.jpg" alt="" style="width: 195px;">
+						<div class="hover_font" style="position: absolute;bottom: 10px;width: 100%;">MT005</div>
+					</a>
+					<a class="R" id="R_C" style="position: absolute;left: 0;bottom: 0;">
+						<img src="../img&vid/baef8d39de860633f90bf954e1d80d05_WPS图片.jpg" alt="" style="height: 175px;position: absolute;left: -50px;transition: 0.5s;" id="R_img3">
+						<div id="R_3">昂昂昂<br>---田摩托</div>
+					</a>
+					<a class="R" id="R_D" style="position: absolute;right: 0;bottom: 0;">
+						<img src="../img&vid/2b1c2745277e5063b27f3130d59381e6_wps图片.jpg" alt="" style="height: 175px;position: absolute;left: -40px;transition: 0.5s;" id="R_img4">
+						<div id="R_4">呱呱呱<br>---小青蛙</div>
+					</a>
+				</div>
+		</div>
+	</section>
+	<footer style="margin: 30px;">
+				<a href="" style="display:block;width:25%; float: left;"><p style="font-size:20px;">联系我们</p></a>
+				<a href="" style="display:block;width:25%; float: left;"><p style="font-size:20px;">帮助</p></a>
+				<a href="画布笑脸.html" style="display:block;width:25%; float: left;"><p style="font-size:20px;">疑惑解答</p></a>
+				<a href="" style="display:block;width:25%; float: left;"><p style="font-size:20px;">站内新闻</p></a>
+	</footer>
+</body>
+</html>
